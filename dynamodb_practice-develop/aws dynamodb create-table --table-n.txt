@@ -1,0 +1,8 @@
+aws dynamodb create-table --table-name TierDetails --attribute-definitions AttributeName=tierCode,AttributeType=S --key-schema AttributeName=tierCode,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 --table-class STANDARD --endpoint-url http://localhost:8000
+
+aws dynamodb batch-write-item --request-items file://D:/spring/tierDetails.json --endpoint-url http://localhost:8000
+
+aws dynamodb describe-table --table-name TierDetails --endpoint-url http://localhost:8000
+
+aws dynamodb query --table-name TierDetails --key-condition-expression "tierCode = :v1" --expression-attribute-values  "{\":v1\":{\"S\":\"CPPLUS\"}}" --endpoint-url http://localhost:8000
+

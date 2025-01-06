@@ -1,0 +1,23 @@
+{
+    "TierDetails": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "tierCode": {"S": "PLUS"},
+                    "tierName": {"S": "Silver"},
+                    "tierOrder": {"N": "2"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "tierCode": {"S": "ELTA"},
+                    "tierName": {"S": "Gold"},
+                    "tierOrder": {"N": "2"}
+                }
+            }
+        }
+    ]
+}
+
