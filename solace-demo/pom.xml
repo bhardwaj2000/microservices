@@ -39,7 +39,10 @@
 			<artifactId>camel-spring-boot-starter</artifactId>
 			<version>3.20.2</version> <!-- Use the latest version -->
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jms -->
 		<dependency>
 			<groupId>org.apache.camel</groupId>
